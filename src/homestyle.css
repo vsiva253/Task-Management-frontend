@@ -20,6 +20,8 @@
   
   /* Styles for regular posts */
   .post-item {
+      flex:auto;
+      margin-right:1.2em;
     background-color: whitesmoke;
     padding: 1px;
     border-radius: 8px;
