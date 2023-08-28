@@ -26,6 +26,7 @@
     padding: 1px;
     border-radius: 8px;
     gap: 5px;
+      justify-content: space-between;
   }
   
   .post-title {
