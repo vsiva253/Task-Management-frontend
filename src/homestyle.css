@@ -1,0 +1,46 @@
+/* homestyle.css */
+
+.post-container {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .completed-container {
+    background-color: #530606; /* Change this to the desired completed container color */
+    /* Add any other styles for completed container */
+  }
+  
+  /* Styles for completed posts */
+  .completed {
+    background-color: #3e0000; /* Change this to the desired completed post color */
+    /* Add any other styles to visually differentiate completed posts */
+    padding: 1px;
+    border-radius: 8px;
+  }
+  
+  /* Styles for regular posts */
+  .post-item {
+    background-color: whitesmoke;
+    padding: 1px;
+    border-radius: 8px;
+    gap: 5px;
+  }
+  
+  .post-title {
+    font-size: 18px;
+    margin-bottom: 2px;
+    width: 500px;
+    color: rebeccapurple;
+    font-weight: 700;
+    height: 10px;
+    background-color: rgb(239, 239, 239);
+  }
+  
+  .post-description {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 500px;
+    height: 30px;
+    color: black;
+  }
+  

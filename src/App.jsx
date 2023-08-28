@@ -5,7 +5,7 @@ import Register from "./Register";
 import { BrowserRouter,Routes, Route} from "react-router-dom";
 import Home from "./Home"
 import CreatePost from './CreatePost';
-
+import { AuthProvider } from './AuthContext';
 
 
 
@@ -13,7 +13,9 @@ function App() {
   
 
   return (
+    
     <BrowserRouter>
+    <AuthProvider>
     <Navbar/>
       <Routes>
         <Route path='/register' element={<Register/>}></Route>
@@ -21,7 +23,9 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/create' element={<CreatePost/>}></Route>
       </Routes>
+      </AuthProvider>
     </BrowserRouter> 
+    
   )
 }
 

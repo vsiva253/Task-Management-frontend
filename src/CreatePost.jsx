@@ -7,10 +7,10 @@ function CreatePost() {
     const [title,setTitle]=useState()
     const [description,setDescription]=useState()
     const navigate=useNavigate();
-
+    
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3001/create',{title,description},{withCredentials: true})
+        axios.post('https://backend-task-s.onrender.com/create',{title,description},{withCredentials: true})
     .then(res=>
       {
         if(res.data==='Success'){
