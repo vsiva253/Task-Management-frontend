@@ -54,10 +54,12 @@ function Home() {
         >
           <h2 className="post-title">{post.title}</h2>
           <p className="post-description">{post.description}</p>
+          <div className="multi-button">
           {!post.isCompleted && (
             <button onClick={() => markAsCompleted(post._id)}>Mark as Completed</button>
           )}
           <button onClick={() => deletePost(post._id)}>Delete</button>
+            </div>
         </div>
       ))}
     </div>
