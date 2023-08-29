@@ -24,9 +24,11 @@
 .post-item {
   flex: auto;
   background-color: whitesmoke;
-  padding: 1px;
+  padding: 0.5px;
   border-radius: 8px;
   gap: 5px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 /* Customized post title styles */
