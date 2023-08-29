@@ -69,7 +69,8 @@
 }
 .post-item button {
   height: 35px;
-  padding: 3px; /* Adjust the button height as desired */
+  padding: 2px; 
+  width: 155px;/* Adjust the button height as desired */
 }
 .edit-description {
   width: 100%;
