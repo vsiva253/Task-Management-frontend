@@ -37,14 +37,15 @@
   }
   
   button {
-border-radius: 8px;
-    border: 1px solid transparent;
+border-radius: 12px;
+    margin-right:2em;
+      margin-left:2em;
     padding: 0.6em 2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-      justify-content:space-between;
-      display:flex;
+      
+    
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
