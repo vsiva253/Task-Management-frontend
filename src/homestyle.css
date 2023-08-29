@@ -1,50 +1,107 @@
 /* homestyle.css */
 
 .post-container {
-    display: grid;
-    gap: 10px;
-  }
-  
-  .completed-container {
-    background-color: #530606; /* Change this to the desired completed container color */
-    /* Add any other styles for completed container */
-  }
-  
-  /* Styles for completed posts */
-  .completed {
-    background-color: #3e0000; /* Change this to the desired completed post color */
-    /* Add any other styles to visually differentiate completed posts */
-    padding: 1px;
-    border-radius: 8px;
-  }
-  
-  /* Styles for regular posts */
-  .post-item {
-      flex:auto;
-      margin-right:1.2em;
-    background-color: whitesmoke;
-    padding: 1px;
-    border-radius: 8px;
-    gap: 5px;
-      justify-content: space-between;
-  }
+  display: grid;
+  gap: 12px;
+}
 
+.post-item button.completed-btn {
   
-  .post-title {
-    font-size: 18px;
-    margin-bottom: 2px;
-    width: 500px;
-    color: rebeccapurple;
-    font-weight: 700;
-    height: 10px;
-    background-color: rgb(239, 239, 239);
-  }
   
-  .post-description {
-    font-size: 16px;
-    line-height: 1.5;
-    width: 500px;
-    height: 30px;
-    color: black;
-  }
   
+  
+  cursor: pointer;
+}
+
+/* Style for the disabled "Mark as Completed" button */
+.post-item button.completed-btn[disabled] {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Styles for regular posts */
+.post-item {
+  flex: auto;
+  background-color: whitesmoke;
+  padding: 1px;
+  border-radius: 8px;
+  gap: 5px;
+}
+
+/* Customized post title styles */
+.post-title {
+  font-size: 18px;
+  margin-bottom: 1px;
+  width: 500px;
+  color: rebeccapurple;
+  font-weight: 700;
+  height: 10px;
+  padding: 2px;
+  background-color: rgb(239, 239, 239);
+}
+
+/* Customized post description styles */
+.post-description {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 500px;
+  height: 60px;
+  color: black;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+/* Custom styles for completed posts */
+.post-item.completed {
+  background-color: #f2f2f2; /* Change background color for completed posts */
+}
+
+.post-item.completed .post-title {
+  color: gray; /* Change title text color for completed posts */
+}
+
+.post-item.completed .post-description {
+  color: #888; /* Change description text color for completed posts */
+}
+.post-item button {
+  height: 35px;
+  padding: 3px; /* Adjust the button height as desired */
+}
+.edit-description {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply the backdrop blur effect */
+  z-index: 9999; /* Make sure the popup appears above other content */
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.edit-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.edit-fields {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
